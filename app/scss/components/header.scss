@@ -24,4 +24,10 @@
     font-weight: 700;
     color: var(--clr-neutral-lt-700);
   }
+
+  .bottom-border {
+    border: 1px solid var(--clr-neutral-lt-600);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }

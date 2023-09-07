@@ -156,6 +156,11 @@ a:active {
   font-weight: 700;
   color: var(--clr-neutral-lt-700);
 }
+.header .bottom-border {
+  border: 1px solid var(--clr-neutral-lt-600);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
 
 .toggle {
   display: grid;
@@ -186,9 +191,9 @@ a:active {
   border: 2px solid white;
 }
 .toggle__background {
+  position: absolute;
   display: block;
   height: 100%;
-  position: absolute;
   width: 100%;
   top: 0;
   border-radius: 0.75rem;
