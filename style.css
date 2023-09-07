@@ -1,5 +1,5 @@
 :root {
-  --ff-primary: "Inter", sans-serif;
+  --ff-primary: 'Inter', sans-serif;
 }
 
 :root {
@@ -21,7 +21,7 @@
   --clr-neutral-dk-200: hsl(230, 19%, 60%);
   --clr-neutral-dk-100: hsl(0, 0%, 100%);
   --clr-neutral-lt-800: hsl(230, 17%, 14%);
-  --clr-neutral-lt-700: hsl(228, 12%, 44%);
+  --clr-neutral-lt-700: hsl(230, 12%, 44%);
   --clr-neutral-lt-600: hsl(228, 33%, 91%);
   --clr-neutral-lt-500: hsl(227, 47%, 96%);
   --clr-neutral-lt-300: hsl(225, 100%, 98%);
@@ -31,7 +31,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--clr-neutral-lt-800);
-    --text-color: var(--clr-neutral-lt-100);
+    --text-color: var(--clr-neutral-dk-100);
     --text-color-2: var(--clr-neutral-dk-300);
     --card-bg: var(--clr-neutral-dk-500);
     --card-hover: var(--clr-neutral-dk-400);
@@ -46,13 +46,13 @@
 }
 body.light {
   --background: var(--clr-neutral-lt-100);
-  --text-color: var(--clr-neutral-lt-800);
+  --text-color: var(--clr-neutral-lt-700);
   --text-color-2: var(--clr-neutral-lt-700);
   --card-bg: var(--clr-neutral-lt-500);
   --card-hover: var(--clr-neutral-lt-600);
   --toggle: var(--clr-neutral-dk-200);
   --toggle-bg: var(--clr-light-theme-toggle);
-  --toggle-btn: var(--clr-neutral-lt-500);
+  --toggle-btn: var(--clr-neutral-lt-800);
 }
 
 body.dark {
@@ -173,7 +173,7 @@ a:active {
   font-weight: 700;
   color: var(--clr-neutral-dk-200);
 }
-.toggle label[for=dark] {
+.toggle label[for='dark'] {
   line-height: 1.5rem;
   margin-right: 0.8125rem;
 }
@@ -181,13 +181,13 @@ a:active {
   position: relative;
   height: 1.5rem;
 }
-.toggle input[type=radio] {
+.toggle input[type='radio'] {
   margin: 0 -0.125rem 0 -0.125rem;
   opacity: 0;
   width: 1.5rem;
   height: 1.5rem;
 }
-.toggle input[type=radio]:focus ~ .toggle__btn {
+.toggle input[type='radio']:focus ~ .toggle__btn {
   border: 2px solid white;
 }
 .toggle__background {
