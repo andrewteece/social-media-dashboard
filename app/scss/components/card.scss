@@ -1,5 +1,145 @@
 @use '../utility/' as *;
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(30);
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .card {
-  padding: rem(20);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--clr-neutral-lt-500);
+  color: var(--clr-neutral-dk-300);
+  padding: rem(25);
+  border-radius: rem(12);
+  text-align: center;
+  transition: background 200ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--clr-neutral-lt-600);
+  }
+
+  &--facebook {
+    border-top: rem(5) solid var(--clr-facebook);
+  }
+
+  &--twitter {
+    border-top: rem(5) solid var(--clr-twitter);
+  }
+
+  &--instagram {
+    padding-top: rem(30);
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: rem(5);
+      background: linear-gradient(
+        225deg,
+        var(--clr-instagram-end),
+        var(--clr-instagram-md) 50.9%,
+        var(--clr-instagram-start) 100%
+      );
+    }
+  }
+
+  &--youtube {
+    border-top: rem(5) solid var(--clr-youtube);
+  }
+
+  &__platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(20);
+    margin-top: rem(5);
+    margin-bottom: rem(28);
+  }
+
+  &__subtitle {
+    font-size: rem(14);
+    font-weight: 700;
+    color: var(--clr-neutral-lt-700);
+  }
+
+  &__icon {
+    margin-right: rem(8);
+
+    &--facebook {
+    }
+
+    &--twitter {
+    }
+
+    &--instagram {
+    }
+
+    &--youtube {
+    }
+  }
+
+  &__username {
+    font-size: rem(12);
+    font-weight: 700;
+    color: var(--clr-neutral-lt-700);
+  }
+
+  &__followers {
+    margin-bottom: rem(25);
+  }
+
+  &__count {
+    color: var(--clr-neutral-lt-800);
+
+    &--big {
+      font-size: rem(56);
+    }
+
+    &--small {
+      font-size: rem(32);
+    }
+  }
+
+  &__label {
+    font-size: rem(12);
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: var(--clr-neutral-lt-700);
+    text-transform: uppercase;
+  }
+
+  &__change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(12);
+    font-weight: 700;
+
+    &--up {
+      color: var(--clr-primary-500);
+    }
+
+    &--down {
+      color: var(--clr-primary-700);
+    }
+
+    img {
+      margin-right: rem(4);
+    }
+  }
 }
