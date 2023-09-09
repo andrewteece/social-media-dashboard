@@ -22,8 +22,8 @@
   --clr-neutral-dk-200: hsl(230, 19%, 60%);
   --clr-neutral-dk-100: hsl(0, 0%, 100%);
   --clr-neutral-lt-800: hsl(230, 17%, 14%);
-  --clr-neutral-lt-700: hsl(230, 12%, 44%);
-  --clr-neutral-lt-600: hsl(228, 33%, 91%);
+  --clr-neutral-lt-700: hsl(228, 12%, 44%);
+  --clr-neutral-lt-600: hsl(231, 10%, 74%);
   --clr-neutral-lt-500: hsl(227, 47%, 96%);
   --clr-neutral-lt-300: hsl(225, 100%, 98%);
   --clr-neutral-lt-100: hsl(0, 0%, 100%);
@@ -171,8 +171,8 @@ a:active {
 }
 .toggle label {
   font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--clr-neutral-dk-200);
+  font-weight: 400;
+  color: var(--clr-neutral-lt-700);
 }
 .toggle label[for=dark] {
   line-height: 1.5rem;
@@ -209,7 +209,7 @@ a:active {
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
-  background-color: var(--clr-neutral-dk-400);
+  background-color: var(--clr-neutral-lt-100);
   transition: all 200ms ease-in-out;
 }
 .toggle #light:checked ~ .toggle__btn {

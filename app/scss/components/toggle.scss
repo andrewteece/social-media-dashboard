@@ -9,8 +9,8 @@
 
   label {
     font-size: rem(14);
-    font-weight: 700;
-    color: var(--clr-neutral-dk-200);
+    font-weight: 400;
+    color: var(--clr-neutral-lt-700);
 
     &[for='dark'] {
       line-height: rem(24);
@@ -53,7 +53,7 @@
     width: rem(18);
     height: rem(18);
     border-radius: 50%;
-    background-color: var(--clr-neutral-dk-400);
+    background-color: var(--clr-neutral-lt-100);
     transition: all 200ms ease-in-out;
   }
 
