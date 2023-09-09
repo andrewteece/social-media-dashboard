@@ -300,6 +300,7 @@ a:active {
 }
 .card__count {
   color: var(--clr-neutral-lt-800);
+  font-weight: 700;
 }
 .card__count--big {
   font-size: 3.5rem;
