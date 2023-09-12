@@ -45,7 +45,7 @@
     pointer-events: none;
   }
 
-  &__btn {
+  &__btn--dark {
     position: absolute;
     left: rem(3);
     top: rem(3);
@@ -57,12 +57,12 @@
     transition: all 200ms ease-in-out;
   }
 
-  #light:checked ~ .toggle__btn {
+  #light:checked ~ .toggle__btn--dark {
     left: calc(100% - 21px);
     right: 3px;
   }
 
-  #system:checked ~ .toggle__btn {
+  #system:checked ~ .toggle__btn--dark {
     left: 50%;
     right: auto;
     transform: translate(-50%);

@@ -48,7 +48,7 @@
   }
 } */
 
-body.light {
+/*body.light {
   --background: var(--clr-neutral-lt-100);
   --text-color: var(--clr-neutral-lt-700);
   --text-color-2: var(--clr-neutral-lt-700);
@@ -57,9 +57,9 @@ body.light {
   --toggle: var(--clr-neutral-dk-200);
   --toggle-bg: var(--clr-light-theme-toggle);
   --toggle-btn: var(--clr-neutral-lt-800);
-}
+}*/
 
-body.dark {
+.darkmode {
   --background: var(--clr-neutral-lt-800);
   --text-color: var(--clr-neutral-lt-100);
   --text-color-2: var(--clr-neutral-dk-300);

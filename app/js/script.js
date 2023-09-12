@@ -1,4 +1,4 @@
-const darkButton = document.getElementById("dark");
+/*const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 
 const setDarkMode = () => {
@@ -44,4 +44,47 @@ window.matchMedia('(prefers-color-scheme: dark)')
 
 // Load the right color on startup - localStorage has precedence
 loadAndUpdateColor();
-console.log('wtf');
+console.log('wtf');*/
+
+// check for saved 'darkMode' in local storage
+let darkMode = localStorage.getItem('darkMode');
+
+const darkModeToggle =
+    document.querySelector('#toggle-btn-dark');
+
+const enableDarkMode = () => {
+    // add the class to the body
+    document.body.classList.add('darkmode');
+    // update darkmode in localStorage
+    localStorage.setItem('darkmode', 'enabled');
+}
+
+const disableDarkMode = () => {
+    //remove the class from the body
+    document.body.classList.remove('darkmode');
+    // update darkMode in localstorage
+    localStorage.setItem('darkmode', null);
+}
+
+// If user already vistited and enabled darkMode
+// start it with it on
+
+if (darkMode === 'enabled') {
+    enableDarkMode();
+}
+
+// when someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+    // get their darkMode setting
+    darkMode = localStorage.getItem('darkMode');
+
+    // ir not current enabled, enable it
+
+    if (darkMode != 'enabled') {
+        enableDarkMode();
+
+        // if it has been enabled, turn it off
+    } else {
+        disableDarkMode();
+    }
+});
