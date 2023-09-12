@@ -29,5 +29,17 @@
     border: 1px solid var(--clr-neutral-lt-600);
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+
+    @include breakpoint(medium) {
+      border: none;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @include breakpoint(large) {
+      border: none;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
