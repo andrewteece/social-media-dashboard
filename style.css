@@ -29,7 +29,7 @@
   --clr-neutral-lt-100: hsl(0, 0%, 100%);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: var(--clr-neutral-lt-800);
     --text-color: var(--clr-neutral-dk-100);
@@ -44,17 +44,7 @@
     );
     --toggle-btn: var(--clr-neutral-lt-800);
   }
-} */
-/*body.light {
-  --background: var(--clr-neutral-lt-100);
-  --text-color: var(--clr-neutral-lt-700);
-  --text-color-2: var(--clr-neutral-lt-700);
-  --card-bg: var(--clr-neutral-lt-500);
-  --card-hover: var(--clr-neutral-lt-600);
-  --toggle: var(--clr-neutral-dk-200);
-  --toggle-bg: var(--clr-light-theme-toggle);
-  --toggle-btn: var(--clr-neutral-lt-800);
-}*/
+}
 .darkmode {
   --background: var(--clr-neutral-lt-800);
   --text-color: var(--clr-neutral-lt-100);
@@ -211,6 +201,11 @@ a:active {
   width: 100%;
   top: 0;
   border-radius: 0.75rem;
+  /*background: linear-gradient(
+    225deg,
+    var(--clr-toggle-bg-end) 0%,
+    var(--clr-toggle-bg-start) 98.02%
+  ); */
   background: var(--clr-light-theme-toggle);
   pointer-events: none;
 }

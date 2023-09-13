@@ -56,14 +56,14 @@ const enableDarkMode = () => {
     // add the class to the body
     document.body.classList.add('darkmode');
     // update darkmode in localStorage
-    localStorage.setItem('darkmode', 'enabled');
+    localStorage.setItem('darkMode', 'enabled');
 }
 
 const disableDarkMode = () => {
     //remove the class from the body
-    document.body.classList.remove('darkmode');
+    document.body.classList.remove('darkMode');
     // update darkMode in localstorage
-    localStorage.setItem('darkmode', null);
+    localStorage.setItem('darkMode', null);
 }
 
 // If user already vistited and enabled darkMode

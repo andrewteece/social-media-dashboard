@@ -1,6 +1,6 @@
 :root {
   --clr-primary-500: hsl(163, 72%, 41%); //limegreen
-  --clr-primary-700: hsl(356, 69%, 56%); // brightred
+  --clr-primary-700: hsl(356, 69%, 56%); // brigh-tred
 
   --clr-facebook: hsl(208, 92%, 53%);
   --clr-twitter: hsl(203, 89%, 53%);
@@ -31,7 +31,7 @@
   --clr-neutral-lt-100: hsl(0, 0%, 100%); // light-bg
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: var(--clr-neutral-lt-800);
     --text-color: var(--clr-neutral-dk-100);
@@ -46,18 +46,7 @@
     );
     --toggle-btn: var(--clr-neutral-lt-800);
   }
-} */
-
-/*body.light {
-  --background: var(--clr-neutral-lt-100);
-  --text-color: var(--clr-neutral-lt-700);
-  --text-color-2: var(--clr-neutral-lt-700);
-  --card-bg: var(--clr-neutral-lt-500);
-  --card-hover: var(--clr-neutral-lt-600);
-  --toggle: var(--clr-neutral-dk-200);
-  --toggle-bg: var(--clr-light-theme-toggle);
-  --toggle-btn: var(--clr-neutral-lt-800);
-}*/
+}
 
 .darkmode {
   --background: var(--clr-neutral-lt-800);

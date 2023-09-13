@@ -41,6 +41,11 @@
     width: 100%;
     top: 0;
     border-radius: rem(12);
+    /*background: linear-gradient(
+      225deg,
+      var(--clr-toggle-bg-end) 0%,
+      var(--clr-toggle-bg-start) 98.02%
+    ); */
     background: var(--clr-light-theme-toggle);
     pointer-events: none;
   }
