@@ -1,3 +1,5 @@
+@use './colors.scss' as *;
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -13,8 +15,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--ff-primary);
-  background: var(--clr-neutral-dk-100);
-  color: var(--clr-neutral-lt-800);
+  background: $light-bg;
+  color: $light-text-2;
 }
 
 .visually-hidden {

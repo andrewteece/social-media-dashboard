@@ -30,6 +30,14 @@
     width: rem(24);
     height: rem(24);
 
+    &:hover {
+      background: linear-gradient(
+        225deg,
+        var(--clr-toggle-bg-end) 0%,
+        var(--clr-toggle-bg-start) 98.02%
+      );
+    }
+
     &:focus ~ .toggle__btn {
       border: 2px solid white;
     }

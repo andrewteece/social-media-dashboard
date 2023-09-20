@@ -1,4 +1,4 @@
-@use '../globals/colors.scss' as *;
+@use '../globals/' as *;
 @use '../utility/' as *;
 @use 'sass:map';
 
@@ -19,8 +19,8 @@
 .card {
   position: relative;
   overflow: hidden;
-  background-color: var(--clr-neutral-lt-500);
-  color: var(--clr-neutral-dk-300);
+  background-color: $light-card;
+  color: $dark-text-2;
   padding: rem(25);
   border-radius: rem(12);
   text-align: center;
@@ -105,7 +105,7 @@
   }
 
   &__count {
-    color: var(--clr-neutral-lt-800);
+    color: $light-text-2;
     font-weight: 700;
 
     &--big {
