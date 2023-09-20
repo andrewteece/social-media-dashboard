@@ -1,5 +1,6 @@
 @use '../utility/' as *;
 @use '../globals/' as *;
+@use 'sass:map';
 
 .toggle {
   display: grid;

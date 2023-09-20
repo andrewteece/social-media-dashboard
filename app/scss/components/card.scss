@@ -1,4 +1,6 @@
+@use '../globals/colors.scss' as *;
 @use '../utility/' as *;
+@use 'sass:map';
 
 .cards {
   display: grid;
@@ -26,15 +28,15 @@
   cursor: pointer;
 
   &:hover {
-    background: var(--clr-neutral-lt-600);
+    background: $light-card-hover;
   }
 
   &--facebook {
-    border-top: rem(5) solid var(--clr-facebook);
+    border-top: rem(5) solid $facebook;
   }
 
   &--twitter {
-    border-top: rem(5) solid var(--clr-twitter);
+    border-top: rem(5) solid $twitter;
   }
 
   &--instagram {
@@ -50,15 +52,15 @@
       height: rem(5);
       background: linear-gradient(
         225deg,
-        var(--clr-instagram-end),
-        var(--clr-instagram-md) 50.9%,
-        var(--clr-instagram-start) 100%
+        $instagram-end,
+        $instagram-md 50.9%,
+        $instagram-start 100%
       );
     }
   }
 
   &--youtube {
-    border-top: rem(5) solid var(--clr-youtube);
+    border-top: rem(5) solid $youtube;
   }
 
   &__platform {
@@ -132,11 +134,11 @@
     font-weight: 700;
 
     &--up {
-      color: var(--clr-primary-500);
+      color: $accent-green;
     }
 
     &--down {
-      color: var(--clr-primary-700);
+      color: $accent-red;
     }
 
     img {
