@@ -27,3 +27,18 @@ body {
   height: 1px;
   overflow: hidden;
 }
+
+.darkmode {
+  --background: $dark-bg;
+  --text-color: $dark-text-2;
+  --text-color2: $dark-text-1;
+  --card-bg: $dark-card;
+  --card-hover: $dark-card-hover;
+  --toggle: $light-bg;
+  --toggle-bg: linear-gradient(
+    225deg,
+    var($toggle-bg-end) 0%,
+    var($toggle-bg-start) 98.02%
+  );
+  --toggle-button: $dark-bg;
+}
