@@ -2,6 +2,37 @@
   --ff-primary: "Inter", sans-serif;
 }
 
+.darkmode {
+  --background: $dark-bg;
+  --text-color: $dark-text-2;
+  --text-color2: $dark-text-1;
+  --card-bg: $dark-card;
+  --card-hover: $dark-card-hover;
+  --toggle: $light-bg;
+  --toggle-bg: linear-gradient(
+    225deg,
+    var($toggle-bg-end) 0%,
+    var($toggle-bg-start) 98.02%
+  );
+  --toggle-button: $dark-bg;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: $dark-bg;
+    --text-color: $dark-text-2;
+    --text-color2: $dark-text-1;
+    --card-bg: $dark-card;
+    --card-hover: $dark-card-hover;
+    --toggle: $light-bg;
+    --toggle-bg: linear-gradient(
+      225deg,
+      var($toggle-bg-end) 0%,
+      var($toggle-bg-start) 98.02%
+    );
+    --toggle-button: $dark-bg;
+  }
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -116,8 +147,8 @@ a:active {
 }
 .toggle label {
   font-size: 0.875rem;
-  font-weight: 400;
-  color: var(--clr-neutral-lt-700);
+  font-weight: 700;
+  color: hsl(230, 19%, 60%);
 }
 .toggle label[for=dark] {
   line-height: 1.5rem;
@@ -132,9 +163,6 @@ a:active {
   opacity: 0;
   width: 1.5rem;
   height: 1.5rem;
-}
-.toggle input[type=radio]:hover {
-  background: linear-gradient(225deg, var(--clr-toggle-bg-end) 0%, var(--clr-toggle-bg-start) 98.02%);
 }
 .toggle input[type=radio]:focus ~ .toggle__btn {
   border: 2px solid white;
@@ -151,7 +179,7 @@ a:active {
     var(--clr-toggle-bg-end) 0%,
     var(--clr-toggle-bg-start) 98.02%
   ); */
-  background: var(--clr-light-theme-toggle);
+  background: hsl(230, 22%, 74%);
   pointer-events: none;
 }
 .toggle__btn--dark {
@@ -162,7 +190,7 @@ a:active {
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
-  background-color: var(--clr-neutral-lt-100);
+  background-color: hsl(0, 0%, 100%);
   transition: all 200ms ease-in-out;
 }
 .toggle #light:checked ~ .toggle__btn--dark {
@@ -238,7 +266,7 @@ a:active {
 .card__subtitle {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--clr-neutral-lt-700);
+  color: hsl(230, 17%, 14%);
 }
 .card__icon {
   margin-right: 0.5rem;
@@ -246,14 +274,17 @@ a:active {
 .card__username {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--clr-neutral-lt-700);
+  color: hsl(230, 12%, 44%);
 }
 .card__followers {
   margin-bottom: 1.5625rem;
+  color: hsl(230, 12%, 44%);
+  letter-spacing: 5px;
 }
 .card__count {
   color: hsl(230, 17%, 14%);
   font-weight: 700;
+  letter-spacing: -2px;
 }
 .card__count--big {
   font-size: 3.5rem;

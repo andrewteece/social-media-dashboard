@@ -10,8 +10,8 @@
 
   label {
     font-size: rem(14);
-    font-weight: 400;
-    color: var(--clr-neutral-lt-700);
+    font-weight: 700;
+    color: $toggle;
 
     &[for='dark'] {
       line-height: rem(24);
@@ -30,14 +30,6 @@
     width: rem(24);
     height: rem(24);
 
-    &:hover {
-      background: linear-gradient(
-        225deg,
-        var(--clr-toggle-bg-end) 0%,
-        var(--clr-toggle-bg-start) 98.02%
-      );
-    }
-
     &:focus ~ .toggle__btn {
       border: 2px solid white;
     }
@@ -55,7 +47,7 @@
       var(--clr-toggle-bg-end) 0%,
       var(--clr-toggle-bg-start) 98.02%
     ); */
-    background: var(--clr-light-theme-toggle);
+    background: $toggle-bg;
     pointer-events: none;
   }
 
@@ -67,7 +59,7 @@
     width: rem(18);
     height: rem(18);
     border-radius: 50%;
-    background-color: var(--clr-neutral-lt-100);
+    background-color: $light-bg;
     transition: all 200ms ease-in-out;
   }
 
